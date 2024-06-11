@@ -6,5 +6,5 @@ echo "Try with root user"
 exit 1
 else 
 echo "enabling httpd ..."
-systemctl enable httpd
+systemctl start httpd
 fi
