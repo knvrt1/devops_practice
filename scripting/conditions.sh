@@ -1,11 +1,11 @@
 #!/bin/bash
 ## Declaring user id variable ##
-uid=$(id -u)
+rpm=$(rpm -qa|grep -i httpd)
 ## if-else statement ##
-if [ $uid -eq 0 ]
+if [ $rpm -eq 0 ]
 then
-echo "Installing httpd..."
-yum install httpd -y
+echo "Enabling httpd..."
+systemctl enable httpd
 else
 echo "User id is not root.Try with root account"
 fi
