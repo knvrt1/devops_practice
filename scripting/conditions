@@ -1,0 +1,9 @@
+#!/bin/bash
+## Declaring variable##
+NUMBER=$1
+## if-else statements ##
+if [ $NUMBER -gt 10 ]
+then
+echo "Provided number is greater than 10"
+else
+echo "Provided number is less than 10"
