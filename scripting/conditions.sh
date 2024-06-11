@@ -2,7 +2,7 @@
 ## Declaring user id variable ##
 rpm=$(rpm -qa|grep -i httpd)
 ## if-else statement ##
-if [ $rpm -eq 0 ]
+if [ $rpm -ne 0 ]
 then
 echo "Enabling httpd..."
 systemctl enable httpd
