@@ -2,5 +2,5 @@
 packages=("httpd" "mysql" "postfix" "snmp")
 for i in $packages
 do 
-echo "Packages are: ${packages[@]}"
+echo -e "Packages are: ${packages[\n@]}"
 done
