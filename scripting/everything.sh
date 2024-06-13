@@ -1,6 +1,6 @@
 #!/bin/bash
-for i in $1
+packages=("httpd" "mysql" "postfix" "snmp")
+for i in $packages
 do 
 echo $i
 done
-
